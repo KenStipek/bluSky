@@ -117,3 +117,23 @@
 #7 /home/kstipek/src/bluSky/system/classes/kohana/request.php(1154): Kohana_Request_Client->execute(Object(Request))
 #8 /home/kstipek/src/bluSky/index.php(109): Kohana_Request->execute()
 #9 {main}
+2012-11-21 10:42:26 --- ERROR: ErrorException [ 4 ]: syntax error, unexpected T_ELSE, expecting T_FUNCTION ~ APPPATH/classes/model/twitter.php [ 41 ]
+2012-11-21 10:42:26 --- STRACE: ErrorException [ 4 ]: syntax error, unexpected T_ELSE, expecting T_FUNCTION ~ APPPATH/classes/model/twitter.php [ 41 ]
+--
+#0 [internal function]: Kohana_Core::shutdown_handler()
+#1 {main}
+2012-11-21 10:42:36 --- ERROR: ErrorException [ 4 ]: syntax error, unexpected T_ELSE, expecting T_FUNCTION ~ APPPATH/classes/model/twitter.php [ 41 ]
+2012-11-21 10:42:36 --- STRACE: ErrorException [ 4 ]: syntax error, unexpected T_ELSE, expecting T_FUNCTION ~ APPPATH/classes/model/twitter.php [ 41 ]
+--
+#0 [internal function]: Kohana_Core::shutdown_handler()
+#1 {main}
+2012-11-21 10:42:54 --- ERROR: ErrorException [ 4 ]: syntax error, unexpected T_ELSE, expecting T_FUNCTION ~ APPPATH/classes/model/twitter.php [ 41 ]
+2012-11-21 10:42:54 --- STRACE: ErrorException [ 4 ]: syntax error, unexpected T_ELSE, expecting T_FUNCTION ~ APPPATH/classes/model/twitter.php [ 41 ]
+--
+#0 [internal function]: Kohana_Core::shutdown_handler()
+#1 {main}
+2012-11-21 10:43:02 --- ERROR: ErrorException [ 4 ]: syntax error, unexpected T_ELSE, expecting T_FUNCTION ~ APPPATH/classes/model/twitter.php [ 41 ]
+2012-11-21 10:43:02 --- STRACE: ErrorException [ 4 ]: syntax error, unexpected T_ELSE, expecting T_FUNCTION ~ APPPATH/classes/model/twitter.php [ 41 ]
+--
+#0 [internal function]: Kohana_Core::shutdown_handler()
+#1 {main}

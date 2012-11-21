@@ -20,7 +20,6 @@
 					<p>Enter valid twitter username to see their latest tweets!</p>
 
 					<div id="alert" class="alert">
-						<button type="button" class="close" data-dismiss="alert">×</button>
 						<strong>Alert:</strong> <p id="alert">test</p>
 					</div>
 					<form id="twitter" method="post" action="/index.php/twitter/twitter">

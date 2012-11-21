@@ -35,6 +35,7 @@ $(document).ready( function () {
 
 				// Unknown twitter user.
 				if(data == false) {
+					$('#tweets').hide();
 					$('#alert p').text('Unknown twitter user.');
 					$('#alert').show();
 

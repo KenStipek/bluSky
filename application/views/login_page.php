@@ -18,7 +18,6 @@
 						<h1>Login</h1>
 					</div>
 					<div id="alert" class="alert" style="display: <?php echo $show_alert ? 'block' : 'none' ?>">
-						<button type="button" class="close" data-dismiss="alert">×</button>
 						<strong>Alert:</strong> <p id="alert"><?php echo $alert_data ?></p>
 					</div>
 					<form class="form-horizontal" id="login" method="post" action="/index.php/login/login">
