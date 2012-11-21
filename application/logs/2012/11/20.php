@@ -390,3 +390,60 @@
 #1 /home/kstipek/src/bluSky/system/classes/kohana/request.php(1154): Kohana_Request_Client->execute(Object(Request))
 #2 /home/kstipek/src/bluSky/index.php(109): Kohana_Request->execute()
 #3 {main}
+2012-11-20 20:17:56 --- ERROR: ErrorException [ 4 ]: syntax error, unexpected ';', expecting T_FUNCTION ~ APPPATH/classes/controller/twitter.php [ 19 ]
+2012-11-20 20:17:56 --- STRACE: ErrorException [ 4 ]: syntax error, unexpected ';', expecting T_FUNCTION ~ APPPATH/classes/controller/twitter.php [ 19 ]
+--
+#0 [internal function]: Kohana_Core::shutdown_handler()
+#1 {main}
+2012-11-20 20:59:06 --- ERROR: ErrorException [ 4 ]: syntax error, unexpected '}' ~ APPPATH/classes/controller/twitter.php [ 17 ]
+2012-11-20 20:59:06 --- STRACE: ErrorException [ 4 ]: syntax error, unexpected '}' ~ APPPATH/classes/controller/twitter.php [ 17 ]
+--
+#0 [internal function]: Kohana_Core::shutdown_handler()
+#1 {main}
+2012-11-20 21:17:59 --- ERROR: ErrorException [ 4 ]: syntax error, unexpected ';', expecting T_FUNCTION ~ APPPATH/classes/controller/twitter.php [ 22 ]
+2012-11-20 21:17:59 --- STRACE: ErrorException [ 4 ]: syntax error, unexpected ';', expecting T_FUNCTION ~ APPPATH/classes/controller/twitter.php [ 22 ]
+--
+#0 [internal function]: Kohana_Core::shutdown_handler()
+#1 {main}
+2012-11-20 21:18:19 --- ERROR: ErrorException [ 8 ]: Undefined variable: session_data ~ APPPATH/views/twitter_page.php [ 5 ]
+2012-11-20 21:18:19 --- STRACE: ErrorException [ 8 ]: Undefined variable: session_data ~ APPPATH/views/twitter_page.php [ 5 ]
+--
+#0 /home/kstipek/src/bluSky/application/views/twitter_page.php(5): Kohana_Core::error_handler(8, 'Undefined varia...', '/home/kstipek/s...', 5, Array)
+#1 /home/kstipek/src/bluSky/system/classes/kohana/view.php(61): include('/home/kstipek/s...')
+#2 /home/kstipek/src/bluSky/system/classes/kohana/view.php(343): Kohana_View::capture('/home/kstipek/s...', Array)
+#3 /home/kstipek/src/bluSky/system/classes/kohana/controller/template.php(44): Kohana_View->render()
+#4 [internal function]: Kohana_Controller_Template->after()
+#5 /home/kstipek/src/bluSky/system/classes/kohana/request/client/internal.php(119): ReflectionMethod->invoke(Object(Controller_Twitter))
+#6 /home/kstipek/src/bluSky/system/classes/kohana/request/client.php(64): Kohana_Request_Client_Internal->execute_request(Object(Request))
+#7 /home/kstipek/src/bluSky/system/classes/kohana/request.php(1154): Kohana_Request_Client->execute(Object(Request))
+#8 /home/kstipek/src/bluSky/index.php(109): Kohana_Request->execute()
+#9 {main}
+2012-11-20 21:18:39 --- ERROR: ErrorException [ 8 ]: Undefined variable: session_data ~ APPPATH/views/twitter_page.php [ 5 ]
+2012-11-20 21:18:39 --- STRACE: ErrorException [ 8 ]: Undefined variable: session_data ~ APPPATH/views/twitter_page.php [ 5 ]
+--
+#0 /home/kstipek/src/bluSky/application/views/twitter_page.php(5): Kohana_Core::error_handler(8, 'Undefined varia...', '/home/kstipek/s...', 5, Array)
+#1 /home/kstipek/src/bluSky/system/classes/kohana/view.php(61): include('/home/kstipek/s...')
+#2 /home/kstipek/src/bluSky/system/classes/kohana/view.php(343): Kohana_View::capture('/home/kstipek/s...', Array)
+#3 /home/kstipek/src/bluSky/system/classes/kohana/controller/template.php(44): Kohana_View->render()
+#4 [internal function]: Kohana_Controller_Template->after()
+#5 /home/kstipek/src/bluSky/system/classes/kohana/request/client/internal.php(119): ReflectionMethod->invoke(Object(Controller_Twitter))
+#6 /home/kstipek/src/bluSky/system/classes/kohana/request/client.php(64): Kohana_Request_Client_Internal->execute_request(Object(Request))
+#7 /home/kstipek/src/bluSky/system/classes/kohana/request.php(1154): Kohana_Request_Client->execute(Object(Request))
+#8 /home/kstipek/src/bluSky/index.php(109): Kohana_Request->execute()
+#9 {main}
+2012-11-20 21:37:30 --- ERROR: ErrorException [ 1 ]: Class 'Model_Twitter' not found ~ APPPATH/classes/controller/twitter.php [ 14 ]
+2012-11-20 21:37:30 --- STRACE: ErrorException [ 1 ]: Class 'Model_Twitter' not found ~ APPPATH/classes/controller/twitter.php [ 14 ]
+--
+#0 [internal function]: Kohana_Core::shutdown_handler()
+#1 {main}
+2012-11-20 21:37:40 --- ERROR: ErrorException [ 8 ]: Undefined variable: consumer_key ~ APPPATH/classes/model/twitter.php [ 12 ]
+2012-11-20 21:37:40 --- STRACE: ErrorException [ 8 ]: Undefined variable: consumer_key ~ APPPATH/classes/model/twitter.php [ 12 ]
+--
+#0 /home/kstipek/src/bluSky/application/classes/model/twitter.php(12): Kohana_Core::error_handler(8, 'Undefined varia...', '/home/kstipek/s...', 12, Array)
+#1 /home/kstipek/src/bluSky/application/classes/controller/twitter.php(18): Model_Twitter->get_tweets('kenstipek')
+#2 [internal function]: Controller_Twitter->action_twitter()
+#3 /home/kstipek/src/bluSky/system/classes/kohana/request/client/internal.php(116): ReflectionMethod->invoke(Object(Controller_Twitter))
+#4 /home/kstipek/src/bluSky/system/classes/kohana/request/client.php(64): Kohana_Request_Client_Internal->execute_request(Object(Request))
+#5 /home/kstipek/src/bluSky/system/classes/kohana/request.php(1154): Kohana_Request_Client->execute(Object(Request))
+#6 /home/kstipek/src/bluSky/index.php(109): Kohana_Request->execute()
+#7 {main}
